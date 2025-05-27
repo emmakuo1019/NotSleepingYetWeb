@@ -1,0 +1,94 @@
+/*區塊*/
+body{
+    margin: 0;
+    color: #0b0b0b;
+    background: #f5f2f1;
+}
+.header{
+    height: 600px;
+    overflow: visible;
+    padding-left: 50px;
+    z-index: 0;
+}
+.about_us{
+    height: 500px;
+    padding: 50px;
+    margin-bottom: 100px;
+    z-index: 10;
+}
+.working{
+    height: auto;
+    display: flex;
+}
+.members{
+    margin-top: 100px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.members_div{
+    margin-bottom: 50px;
+    text-align: left;
+    margin-left: 10%;
+}
+.works{
+    height: 500px;
+    border: #0b0b0b 1px solid;
+}
+footer{
+    height: 300px;
+    display: flex;
+    background: #0b0b0b;
+    color: white;
+}
+.footer_div{
+    margin-top: 50px;
+    margin-left: 100px;
+}
+/*文字*/
+.title{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.header_title{
+    font-size: 180px;
+    position: sticky;
+    top: 20px;
+}
+.about_us_title{
+    font-size: 50px;
+    position: sticky;
+    top: 50px;
+}
+.working_title{
+    font-size: 50px;
+    margin-bottom: 20px
+}
+.members_title{
+    font-size: 50px;
+    position: relative;
+    margin-left: 45%;
+    margin-bottom: 100px;
+    top: 30px;
+}
+.members_conact{
+    font-size: 20px;
+    margin-left: 10px
+}
+.footer_conact{
+    margin-top: 20px;
+}
+.conact{
+    font-size: 20px;
+}
+/*圖片*/
+.members_img{
+    height: 300px;
+    width: 200px;
+    position: sticky;
+    top:0;
+}
+a:link{color: aliceblue}
+a:hover{color: aliceblue}
