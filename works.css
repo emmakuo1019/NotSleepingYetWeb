@@ -15,33 +15,6 @@ body{
     margin-bottom: 300px;
     z-index: 10;
 }
-.working{
-    height: auto;
-    display: flex;
-}
-.working_container{
-    margin-left: 15%;margin-right: 10%;margin-top: 10px;
-}
-.members{
-    margin-top: 200px;
-    height: auto;
-    align-items: center;
-    display: flex;flex-direction: column;
-}
-.members_container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px; /* 調整為你想要的間距 */
-    width: 100%;
-}
-.members_div {
-    width: 200px; /* 你可以根據圖片大小調整 */
-}
-.works{
-    height: 500px;
-    border: #0b0b0b 1px solid;
-}
 footer{
     height: 300px;
     display: flex;
@@ -68,25 +41,6 @@ footer{
     font-size: 50px;
     position: sticky;
     top: 50px;
-}
-.working_title {
-    font-size: 50px;
-    margin-bottom: 20px;margin-left: 0;
-    transition: margin-left 0.3s ease; /* 平滑動畫 */
-}
-.working_title:hover {
-    margin-left: 20px; /* 滑鼠移上去向右滑動 */
-}
-.members_title{
-    font-size: 50px;
-    position: relative;
-    margin-bottom: 100px;
-    top: 30px;
-}
-.members_conact{
-    font-size: 20px;
-    margin-left: 10px;margin-top: 20px;
-    line-height: 1.6;
 }
 .footer_conact{
     margin-top: 20px;
