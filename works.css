@@ -3,17 +3,46 @@ body{
     margin: 0;
     color: aliceblue;
     background: #0b0b0b;
+    font-family: "Noto Serif TC", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 .header{
-    height: 650px;
+    height: 600px;
     overflow: visible;
-    padding-left: 50px;
-    z-index: 0;
+    padding-left: 10%;
 }
-.about_us{
-    padding: 50px;
-    margin-bottom: 300px;
-    z-index: 10;
+.nav{
+    position: sticky;top: 10px;
+    height: 60px;
+    padding-right:30px;
+    justify-content: right;align-items: center;
+    display: flex;
+    gap: 20px;
+    font-size: 18pt;
+    backdrop-filter: blur(5px);
+    z-index: 15;
+    border: #f5f2f1 0.8px solid;
+}
+#about{
+    padding: 10%;
+}
+#character{
+    text-align: right;
+    padding: 10%;
+}
+#world{
+    padding: 10%;
+}
+#news{
+    padding: 10%;
+    display: flex;justify-content: center;
+    gap: 70px;
+}
+.news-div{
+    height: 200px;width: 200px;
+    background: darkseagreen;
 }
 footer{
     height: 300px;
@@ -26,21 +55,11 @@ footer{
     margin-left: 100px;
 }
 /*文字*/
-.title{
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-}
 .header_title{
-    font-size: 180px;
+    font-size: 100px;
     position: sticky;
-    top: 20px;
-}
-.about_us_title{
-    font-size: 50px;
-    position: sticky;
-    top: 50px;
+    top: 80px;
+    z-index: 10;
 }
 .footer_conact{
     margin-top: 20px;
@@ -51,12 +70,11 @@ footer{
     line-height: 2;
 }
 /*圖片*/
-.members_img{
-    height: 260px;
-    width: 200px;
-    position: sticky;
+.mainc{
+    position: absolute;
     top:0;
+    left: 50%;
 }
 a:link{color: #0b0b0b;text-decoration:none}
-a:active{color: #f5f2f1}
-a:visited{color: #f5f2f1}
+a:active{color: #0b0b0b}
+a:visited{color: #0b0b0b}

@@ -8,7 +8,6 @@ body{
     height: 650px;
     overflow: visible;
     padding-left: 50px;
-    z-index: 0;
 }
 .about_us{
     padding: 50px;
@@ -18,9 +17,11 @@ body{
 .working{
     height: auto;
     display: flex;
+    flex-direction:row;
 }
 .working_container{
-    margin-left: 15%;margin-right: 10%;margin-top: 10px;
+    margin-left: 15%;margin-right: 15%;margin-top: 10px;
+    color: #f5f2f1;
 }
 .members{
     margin-top: 200px;
@@ -36,7 +37,7 @@ body{
     width: 100%;
 }
 .members_div {
-    width: 200px; /* 你可以根據圖片大小調整 */
+    width: 200px;
 }
 .works{
     height: 500px;
@@ -85,7 +86,7 @@ footer{
 }
 .members_conact{
     font-size: 20px;
-    margin-left: 10px;margin-top: 20px;
+    margin-left: 18px;margin-top: 20px;
     line-height: 1.6;
 }
 .footer_conact{
@@ -97,12 +98,33 @@ footer{
     line-height: 2;
 }
 /*圖片*/
+.working_img{
+    width: 50%;
+    height: auto;
+}
 .members_img{
-    height: 260px;
+    height: 250px;
     width: 200px;
     position: sticky;
     top:0;
+    border-radius: 10px;
 }
 a:link{color: #0b0b0b;text-decoration:none}
-a:active{color: #f5f2f1}
-a:visited{color: #f5f2f1}
+a:active{color: #0b0b0b}
+a:visited{color: #0b0b0b}
+/*平板設定*/
+@media(max-width:1250px){
+    .working_container{
+        margin-left: 10px;
+    }
+}
+
+/*手機設定*/
+@media(max-width:500px){
+    .working{
+        flex-direction: column;
+    }
+    .working_img{
+        width: 100%;
+    }
+}
