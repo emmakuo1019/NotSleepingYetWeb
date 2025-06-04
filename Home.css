@@ -1,20 +1,37 @@
 /*區塊*/
 body{
     margin: 0;
-    color: aliceblue;
-    background: #0b0b0b;
+    color: #ffffff;
+    background: #111823;
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 10%;padding-right: 10%;padding-bottom: 10%;
 }
-.header{
+.nav{
+    position: sticky;top: 10px;
+    height: 60px;
+    padding-right:10%;padding-left: 10%;
+    align-items: center;justify-content: right;
+    display: flex;
+    font-size: 18pt;
+    backdrop-filter: blur(5px);
+    z-index: 15;
+}
+.nav-container{
+    display: flex;
+    gap: 20px;
+}
+#header{
     height: 650px;
     overflow: visible;
-    padding-left: 50px;
 }
-.about_us{
-    padding: 50px;
-    margin-bottom: 300px;
-    z-index: 10;
+#about_us{
+    margin-bottom: 200px;
 }
-.working{
+#working{
+    margin-top: 150px;margin-bottom: 150px;
     height: auto;
     display: flex;
     flex-direction:row;
@@ -23,8 +40,8 @@ body{
     margin-left: 15%;margin-right: 15%;margin-top: 10px;
     color: #f5f2f1;
 }
-.members{
-    margin-top: 200px;
+#members{
+    margin-top: 100px;margin-bottom: 150px;
     height: auto;
     align-items: center;
     display: flex;flex-direction: column;
@@ -39,26 +56,32 @@ body{
 .members_div {
     width: 200px;
 }
-.works{
-    height: 500px;
-    border: #0b0b0b 1px solid;
+#news{
+    margin-top: 100px;margin-bottom: 100px;
+    display: flex;flex-direction: column;
+    justify-content: center;align-items: center;
+}
+.news-container{
+    gap: 70px;
+    display: flex;flex-direction: row;
+}
+.news-div{
+    height: 200px;width: 200px;
+    border: white solid 1px;
 }
 footer{
-    height: 300px;
+    margin-top: 100px;
     display: flex;
-    background: aliceblue;
-    color: #0b0b0b;
 }
 .footer_div{
-    margin-top: 50px;
     margin-left: 100px;
 }
 /*文字*/
 .title{
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 700;
     font-style: normal;
+    font-size: 50px;
 }
 .header_title{
     font-size: 180px;
@@ -66,20 +89,19 @@ footer{
     top: 20px;
 }
 .about_us_title{
-    font-size: 50px;
+    padding-left: 10%;
+    padding-top: 50px;
     position: sticky;
-    top: 50px;
+    top: 70px;
 }
 .working_title {
-    font-size: 50px;
-    margin-bottom: 20px;margin-left: 0;
+    margin-bottom: 30px;margin-left: 0;
     transition: margin-left 0.3s ease; /* 平滑動畫 */
 }
 .working_title:hover {
     margin-left: 20px; /* 滑鼠移上去向右滑動 */
 }
 .members_title{
-    font-size: 50px;
     position: relative;
     margin-bottom: 100px;
     top: 30px;
@@ -88,6 +110,9 @@ footer{
     font-size: 20px;
     margin-left: 18px;margin-top: 20px;
     line-height: 1.6;
+}
+.news-title{
+    margin-bottom: 100px;  
 }
 .footer_conact{
     margin-top: 20px;
@@ -109,9 +134,9 @@ footer{
     top:0;
     border-radius: 10px;
 }
-a:link{color: #0b0b0b;text-decoration:none}
-a:active{color: #0b0b0b}
-a:visited{color: #0b0b0b}
+a:link{color: #f5f2f1;text-decoration:none}
+a:active{color: #f5f2f1}
+a:visited{color: #f5f2f1}
 /*平板設定*/
 @media(max-width:1250px){
     .working_container{

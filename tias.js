@@ -1,6 +1,28 @@
 $(document).ready(function () {
     console.log('home.js 載入成功');
-
+    
+    //主頁
+    $("#about_us_btn").on("click", function () {
+        $("#about_us").get(0).scrollIntoView(
+            {behavior: "smooth"}
+        )
+    });
+    $("#working_btn").on("click", function () {
+        $("#working").get(0).scrollIntoView(
+            {behavior: "smooth"}
+        )
+    });
+    $("#member_btn").on("click", function () {
+        $("#members").get(0).scrollIntoView(
+            {behavior: "smooth"}
+        )
+    });
+    $("#news_btn").on("click", function () {
+        $("#news").get(0).scrollIntoView(
+            {behavior: "smooth"}
+        )
+    });
+    //遊戲介紹
     $("#about-btn").on("click", function () {
         $("#about").get(0).scrollIntoView(
             {behavior: "smooth"}
@@ -16,8 +38,8 @@ $(document).ready(function () {
             {behavior: "smooth"}
         )
     });
-    $("#news-btn").on("click", function () {
-        $("#news").get(0).scrollIntoView(
+    $("#news-working-btn").on("click", function () {
+        $("#news-working").get(0).scrollIntoView(
             {behavior: "smooth"}
         )
     });
