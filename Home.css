@@ -156,9 +156,6 @@ a:visited{color: #f5f2f1}
 /*平板設定*/
 @media(max-width:1250px){
     /*區塊*/
-    .nav{
-        font-size: 12pt;
-    }
     .working_container{
         margin-left: 10px;
     }
@@ -176,9 +173,6 @@ a:visited{color: #f5f2f1}
 /*手機設定*/
 @media(max-width:500px){
     /*區塊*/
-    .nav{
-        font-size: 12pt;
-    }
     #working{
         flex-direction: column;
     }

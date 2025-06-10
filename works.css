@@ -103,7 +103,7 @@ footer{
 }
 .actor_2_img{
     position: absolute;
-    top: 700px;left:60%;
+    top: 700px;left:50%;
     mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%); /* 設定漸層遮罩 */
     filter: blur(3px); /* 模糊效果 */
     z-index: -1;
