@@ -1,23 +1,17 @@
 [
   {
-    "version": "v1.2.5",
+    "version": "v0.0.0",
     "date": "2025-06-17",
-    "title": "修復角色動畫",
-    "content": "修正角色動畫錯誤，提升動畫流暢度。",
+    "title": "網頁建得差不多了",
+    "content": "放一個更新日誌，測試一下。看起來是沒什麼問題，接下來就等退休了",
     "images": [
       "update_image/bear.jpeg"
     ]
   },
   {
-    "version": "v1.2.4",
-    "date": "2025-06-01",
-    "title": "UI 介面更新",
-    "content": "調整主選單配色，新增音量控制功能。"
-  },
-  {
-    "version": "v1.2.3",
-    "date": "2025-05-20",
-    "title": "新關卡「深淵礦坑」",
-    "content": "加入新關卡與敵人類型，優化載入速度。"
+    "version": "v0.0.0",
+    "date": "2025-06-e4",
+    "title": "f44gb",
+    "content": "4nj84bw"
   }
 ]

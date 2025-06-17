@@ -1,34 +1,36 @@
 body {
     font-family: sans-serif;
     padding: 2em;
-    background: #f9f9f9;
+    background: #14324e;
+    color: #14324e;
 }
-h1 { margin-bottom: 1em; }
+h1{
+    margin: 0 0 20px 0 ;
+    color: #ffffff;
+}
+a:link{color: #ffffff;text-decoration:none}
 #log-list button {
     display: flex;flex-direction: column;
-    margin:0 0 20px 0;
+    margin:0 0 30px 0;
     width: 150px;height: 40px;
     padding:1em;
-    background-color: #ddd;
+    background-color: #ffffff;
     border: none;
     cursor: pointer;
     border-radius: 5px;
 }
 #log-list button.active {
-    background-color: #333;
-    color: white;
+    background-color: #bbd4ce;
+    color: #14324e;
 }
 #log-detail {
     margin-left: 2em;
-    padding: 1em;
+    padding: 2em;
     background: white;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
-#log-detail h2 {
-    margin-bottom: 0.5em;
-}
 #log-detail small {
-    color: #666;
+    color: #6c7691;
     font-size: 0.9em;
 }
