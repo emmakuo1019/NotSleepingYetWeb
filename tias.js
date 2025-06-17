@@ -43,6 +43,39 @@ $(document).ready(function () {
             {behavior: "smooth"}
         )
     });
+    //角色切換
+    $('.menu_item').on('click', function() {
+        const roleIndex = $(this).data('role') - 1; // 0-based
+        const slider = $('.role_slider');
+        const containerWidth = slider.width();
+
+        $('.left-door, .right-door').addClass('closed');
+
+        $('.left-door').one('transitionend', function() {
+            // 滾動到指定角色位置
+            slider.animate({
+                scrollLeft: roleIndex * containerWidth
+            }, 800);
+
+            // 門打開
+            setTimeout(() => {
+                $('.left-door, .right-door').removeClass('closed');
+            }, 800);
+        });
+
+        const clickedCon = $(this).next('.character_info');
+        if (clickedCon.is(':visible')) {
+            // 已顯示，收回
+            clickedCon.slideUp();
+        } else {
+            // 收起其他
+            $('.character_info').slideUp();
+
+            // 顯示當前
+            clickedCon.slideDown();
+        }
+    });
+    
     //進入視窗效果
     /*const elements = document.querySelectorAll(".title");
 
