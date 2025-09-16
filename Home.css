@@ -46,8 +46,8 @@ body{
     top: 20px;
 }
 .header_img{
-    position: absolute;top:100px;right: 100px;
-    width: 1000px;height: 600px;
+    position: absolute;top:100px;right: 300px;
+    width: 500px;height: 200px;
 }
 /*ABOUT US*/
 #about_us{
@@ -81,7 +81,7 @@ body{
 }
 .working_img{
     width: 50%;
-    height: auto;
+    
 }
 /*MEMBER*/
 #members{
