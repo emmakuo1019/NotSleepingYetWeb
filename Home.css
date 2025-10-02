@@ -1,13 +1,13 @@
 /*共用*/
 body{
     margin: 0;
-    color: #ffffff;
-    background: #111823;
+    color: #0F283D;
+    background: #ffffff;
     font-family: "Noto Sans TC", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    padding-left: 10%;padding-right: 10%;padding-bottom: 10%;
+    padding: 0 3% 3% 3%;
 }
 .title{
     font-family: "PT Sans Narrow", sans-serif;
@@ -23,31 +23,40 @@ body{
 .nav{
     position: sticky;top: 10px;
     height: 60px;
-    padding: 0 10% 0 10%;
-    align-items: center;justify-content: right;
     display: flex;
-    font-size: 18pt;
+    justify-content: space-between;align-content: center;
+    font-size: 15pt;
     backdrop-filter: blur(5px);
     z-index: 15;
 }
 .nav-container{
+    align-items: center;
     cursor: pointer;
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 /*HEADER*/
 #header{
-    height: 650px;
+    height: 1100px;
     overflow: visible;
 }
-.header_title{
-    font-size: 180px;
+.header_Logo{
     position: sticky;
-    top: 20px;
+    top:250px;left: 60%;
+    z-index: 10;
+    filter: blur(4px);
+    animation: float 15s ease-in-out infinite;
+}
+@keyframes float {
+    0%   { transform: translate(0, 0) rotate(0deg); }
+    25%  { transform: translate(35px, -60px) rotate(5deg); }
+    50%  { transform: translate(0px, -30px) rotate(-3deg); }
+    75%  { transform: translate(-50px, -20px) rotate(6deg); }
+    100% { transform: translate(0, 10px) rotate(0deg); }
 }
 .header_img{
-    position: absolute;top:100px;right: 300px;
-    width: 500px;height: 200px;
+    position: absolute;top:200px;left: 100px;
+    width: 800px;height: auto;
 }
 /*ABOUT US*/
 #about_us{
@@ -70,7 +79,7 @@ body{
 }
 .working_container{
     margin: 10px 15% 0 15%;
-    color: #f5f2f1;
+    color: #0F283D;
 }
 .working_title {
     margin:0 0 30px 0 ;
@@ -118,7 +127,7 @@ body{
     height: auto;
 }
 .personal_web_box{
-    border: white 0.5px solid;
+    border: #0F283D 0.5px solid;
     border-radius: 5px;
     width: 50%;
     margin:10px 0 0 12px;
@@ -151,6 +160,7 @@ footer{
 a:link{color: #f5f2f1;text-decoration:none}
 a:active{color: #f5f2f1}
 a:visited{color: #f5f2f1}
+
 /*平板設定*/
 @media(max-width:1250px){
     /*區塊*/
