@@ -1,5 +1,5 @@
 /*共用設定*/
-body{
+body {
     margin: 0;
     color: #ffffff;
     background-color: rgb(2, 2, 2);
@@ -8,44 +8,55 @@ body{
     font-style: normal;
     z-index: -2;
 }
-.title{
+
+.title {
     margin-bottom: 50px;
     font-size: 30px;
     font-weight: 900;
 }
-.conact{
+
+.conact {
     font-size: 20px;
     line-height: 2;
     color: rgb(239, 230, 228);
-    font-weight:400;
+    font-weight: 400;
 }
-.on_computer{
+
+.on_computer {
     display: block;
 }
-.on_phone{
+
+.on_phone {
     display: none;
 }
+
 /*HEADER*/
-.header{
+.header {
     height: 500px;
     overflow: visible;
 }
-.header_img{
+
+.header_img {
     z-index: 1;
     position: sticky;
     top: 80px;
     margin-left: 10%;
-    width: 600px;height: 200px;
+    width: 600px;
+    height: 200px;
 }
-.stage{
+
+.stage {
     position: absolute;
-    top:0;left: 0;
+    top: 0;
+    left: 0;
     width: 100%;
     z-index: -1;
 }
+
 /*NAV*/
-.nav{
-    position: sticky;top: 10px;
+.nav {
+    position: sticky;
+    top: 10px;
     height: 60px;
     padding: 0 10% 0 10%;
     align-items: center;
@@ -54,28 +65,33 @@ body{
     backdrop-filter: blur(5px);
     z-index: 3;
 }
-.nav-container{
+
+.nav-container {
     cursor: pointer;
     justify-content: right;
     display: flex;
     gap: 20px;
 }
+
 /*ABOUT*/
-#about{
+#about {
     padding: 10%;
-    height:auto;
+    height: auto;
 }
+
 /*CHARACTER*/
-#character{
+#character {
     padding-left: 10%;
     width: 80%;
     height: auto;
     display: flex;
     flex-direction: row;
 }
-.character_title{
+
+.character_title {
     font-size: 35px;
 }
+
 .character_show {
     position: relative;
     width: 600px; /* 根據你的圖片調整 */
@@ -89,27 +105,34 @@ body{
             rgba(0, 0, 0, 0) 100%
     );
 }
+
 .role_slider {
     display: flex;
     overflow-x: hidden; /* 如果想看到滾動條可改成 scroll */
     height: 100%;
 }
+
 .role_img {
     width: 600px;
-    height:700px;
+    height: 700px;
     object-fit: cover;
 }
-.character_menu{
+
+.character_menu {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 30pt;line-height: 1.6;
-    padding: 5%;gap: 10px;
+    font-size: 30pt;
+    line-height: 1.6;
+    padding: 5%;
+    gap: 10px;
     z-index: 5;
 }
-.character_info{
+
+.character_info {
     display: none;
 }
+
 .door {
     position: absolute;
     top: 0;
@@ -118,99 +141,134 @@ body{
     transition: all 1s ease;
     z-index: 2;
 }
-.left-door{
+
+.left-door {
     left: -300px;
 }
-.right-door{
+
+.right-door {
     right: -300px;
 }
+
 .left-door.closed {
     left: 0;
 }
+
 .right-door.closed {
     right: 0;
 }
+
 /*WORLD*/
-#world{
+#world {
     padding: 10%;
 }
+
 /*FOOTER*/
-footer{
+footer {
     height: 300px;
     display: flex;
     background: aliceblue;
     color: #0b0b0b;
-    gap: 100px;padding-left: 100px;
+    gap: 100px;
+    padding-left: 100px;
 }
-.footer_div{
+
+.footer_div {
     margin-top: 50px;
 }
-.footer_conact{
+
+.footer_conact {
     margin-top: 20px;
     line-height: 1.6;
 }
 
-a:link{color: #0b0b0b;text-decoration:none}
-a:active{color: #0b0b0b}
-a:visited{color: #0b0b0b}
+a:link {
+    color: #0b0b0b;
+    text-decoration: none
+}
+
+a:active {
+    color: #0b0b0b
+}
+
+a:visited {
+    color: #0b0b0b
+}
 
 /*平板設定*/
-@media(max-width:1250px){
+@media (max-width: 1250px) {
     /*區塊*/
-    .conact{
+    .conact {
         font-size: 18px;
     }
 }
+
 /*手機設定*/
-@media(max-width:500px){
-    .on_computer{
+@media (max-width: 500px) {
+    .on_computer {
         display: none;
     }
-    .on_phone{
+
+    .on_phone {
         display: block;
     }
+
     /*HEADER*/
-    .header{
+    .header {
         height: 300px;
     }
-    .nav{
+
+    .nav {
         font-size: 12pt;
     }
-    #about{
+
+    #about {
         height: 500px;
     }
+
     /*CHARACTER*/
-    #character{
+    #character {
         width: 100%;
     }
-    .character_show{
+
+    .character_show {
         height: 500px;
     }
-    .character_title{
+
+    .character_title {
         font-size: 20pt;
     }
-    .role_img{
+
+    .role_img {
         height: 500px;
     }
-    .door{
+
+    .door {
         height: 500px;
     }
-    footer{
-        gap: 50px;padding-left: 50px;
+
+    footer {
+        gap: 50px;
+        padding-left: 50px;
     }
+
     /*文字*/
-    .title{
+    .title {
         font-size: 25px;
     }
+
     .conact {
         font-size: 15px;
     }
+
     /*圖片*/
-    .header_img{
+    .header_img {
         margin-left: 10%;
-        width: 400px;height: auto;
+        width: 400px;
+        height: auto;
     }
-    .actor_img{
+
+    .actor_img {
         position: static;
         margin-top: 20px;
     }

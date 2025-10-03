@@ -1,5 +1,5 @@
 /*共用*/
-body{
+body {
     margin: 0;
     color: #0F283D;
     background: #ffffff;
@@ -9,105 +9,163 @@ body{
     font-style: normal;
     padding: 0 3% 3% 3%;
 }
-.title{
+
+.title {
     font-family: "PT Sans Narrow", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 50px;
 }
-.conact{
+
+.conact {
     font-size: 20px;
     line-height: 2;
 }
+
 /*NAV*/
-.nav{
-    position: sticky;top: 10px;
+.nav {
+    position: sticky;
+    top: 10px;
     height: 60px;
     display: flex;
-    justify-content: space-between;align-content: center;
+    justify-content: space-between;
+    align-content: center;
     font-size: 15pt;
     backdrop-filter: blur(5px);
     z-index: 15;
 }
-.nav-container{
+
+.nav-container {
     align-items: center;
     cursor: pointer;
     display: flex;
     gap: 30px;
 }
+
 /*HEADER*/
-#header{
-    height: 1100px;
+#header {
+    height: 1200px;
     overflow: visible;
 }
-.header_Logo{
+
+.header_Logo {
     position: sticky;
-    top:250px;left: 60%;
+    height: auto;
+    width: auto;
+    top: 250px;
+    left: 60%;
     z-index: 10;
     filter: blur(4px);
     animation: float 15s ease-in-out infinite;
 }
+
 @keyframes float {
-    0%   { transform: translate(0, 0) rotate(0deg); }
-    25%  { transform: translate(35px, -60px) rotate(5deg); }
-    50%  { transform: translate(0px, -30px) rotate(-3deg); }
-    75%  { transform: translate(-50px, -20px) rotate(6deg); }
-    100% { transform: translate(0, 10px) rotate(0deg); }
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        transform: translate(35px, -60px) rotate(5deg);
+    }
+    50% {
+        transform: translate(0px, -30px) rotate(-3deg);
+    }
+    75% {
+        transform: translate(-50px, -20px) rotate(6deg);
+    }
+    100% {
+        transform: translate(0, 10px) rotate(0deg);
+    }
 }
-.header_img{
-    position: absolute;top:200px;left: 100px;
-    width: 800px;height: auto;
+
+.header_img {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    width: 800px;
+    height: auto;
 }
+
+.header_english {
+    position: absolute;
+    top: 920px;
+    left: 100px;
+    height: auto;
+    width: auto;
+}
+
+.header_studio {
+    position: absolute;
+    top: 1000px;
+    left: 100px;
+    height: auto;
+    width: auto;
+}
+
 /*ABOUT US*/
-#about_us{
+#about_us {
     margin-bottom: 200px;
 }
-.about_us_title{
-    padding:50px 0 0 10%;
+
+.about_us_title {
+    padding: 50px 0 0 10%;
     position: sticky;
     top: 70px;
 }
-.about_us_description{
-    margin-left:40%;width:60%
+
+.about_us_description {
+    margin-left: 40%;
+    width: 60%
 }
+
 /*WORKING*/
-#working{
-    margin-top: 150px;margin-bottom: 150px;
-    height: auto;
+#working {
     display: flex;
-    flex-direction:row;
+    flex-direction: column;
+    gap: 50px;
+    margin: 150px 0 150px 0;
+    padding: 0 0 0 150px;
+    height: auto;
 }
-.working_container{
+
+.working_container {
     margin: 10px 15% 0 15%;
     color: #0F283D;
 }
+
 .working_title {
-    margin:0 0 30px 0 ;
+    font-size: 30pt;
     transition: margin-left 0.3s ease; /* 平滑動畫 */
 }
+
 .working_title:hover {
     margin-left: 20px; /* 滑鼠移上去向右滑動 */
 }
-.working_img{
-    width: 50%;
-    
+
+.working_img {
+    width: 400px;
+    height: auto;
 }
+
 /*MEMBER*/
-#members{
+#members {
     margin: 100px 0 150px 0;
     height: auto;
     align-items: center;
-    display: flex;flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
-.members_title{
+
+.members_title {
     position: relative;
     margin-bottom: 100px;
     top: 30px;
 }
-.members_conact{
-    margin:20px 0 0 18px;
+
+.members_conact {
+    margin: 20px 0 0 18px;
     line-height: 1.6;
 }
+
 .members_container {
     display: flex;
     flex-wrap: wrap;
@@ -115,101 +173,194 @@ body{
     gap: 50px; /* 調整為你想要的間距 */
     width: 100%;
 }
-.members_img{
+
+.members_img {
     height: 250px;
     width: 200px;
     position: sticky;
-    top:0;
+    top: 0;
     border-radius: 10px;
 }
+
 .members_div {
     width: 200px;
     height: auto;
 }
-.personal_web_box{
+
+.personal_web_box {
     border: #0F283D 0.5px solid;
     border-radius: 5px;
     width: 50%;
-    margin:10px 0 0 12px;
+    margin: 10px 0 0 12px;
     text-align: center;
     transition: margin-left 0.3s ease;
 }
+
 .personal_web_box:hover {
     margin-left: 20px; /* 滑鼠移上去向右滑動 */
 }
+
 /*NEWS*/
-#news{
+#news {
     margin: 150px 0 100px 0;
-    display: flex;flex-direction: column;
-    justify-content: center;align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.news-title{
+
+.news-title {
     margin-bottom: 100px;
 }
+
 /*FOOTER*/
-footer{
+footer {
     height: 300px;
     display: flex;
-    gap: 100px;padding-left: 100px;
+    gap: 100px;
+    padding-left: 100px;
 }
-.footer_conact{
+
+.footer_conact {
     margin-top: 20px;
     line-height: 1.6;
 }
 
-a:link{color: #f5f2f1;text-decoration:none}
-a:active{color: #f5f2f1}
-a:visited{color: #f5f2f1}
+a:link {
+    color: #0F283D;
+    text-decoration: none
+}
+
+a:active {
+    color: #0F283D
+}
+
+a:visited {
+    color: #0F283D
+}
 
 /*平板設定*/
-@media(max-width:1250px){
+@media (max-width: 1250px) {
     /*區塊*/
-    .working_container{
+    #header {
+        height: 900px;
+    }
+
+    #working {
+        padding: 0 0 0 100px;
+    }
+
+    .working_container {
         margin-left: 10px;
     }
+
     /*文字*/
-    .conact{
+    .conact {
         font-size: 18px;
     }
+
     /*圖片*/
     .working_img {
         width: 40%;
         height: 40%;
     }
+
+    .header_Logo {
+        height: 20%;
+        width: auto;
+        top: 250px;
+        left: 60%;
+    }
+
+    .header_img {
+        top: 150px;
+        left: 100px;
+        width: 500px;
+        height: auto;
+    }
+
+    .header_english {
+        top: 720px;
+        left: 100px;
+        width: 60%;
+        height: auto;
+    }
+
+    .header_studio {
+        top: 800px;
+        left: 100px;
+        width: 45%;
+        height: auto;
+    }
 }
 
 /*手機設定*/
-@media(max-width:500px){
+@media (max-width: 500px) {
     /*區塊*/
-    #working{
-        flex-direction: column;
+    body {
+        padding: 0 6% 3% 6%;
     }
-    footer{
-        gap: 50px;padding-left: 50px;
+
+    #header {
+        height: 800px;
     }
+
+    #working {
+        padding: 0 0 0 0;
+    }
+
+    footer {
+        gap: 50px;
+        padding-left: 50px;
+    }
+
     /*文字*/
-    .header_title{
+    .header_title {
         font-size: 100pt;
     }
-    .about_us_title{
-        position: relative;top: 0;
-        padding:0;
+
+    .about_us_title {
+        position: relative;
+        top: 0;
+        padding: 0;
     }
-    .about_us_description{
-        margin-left:0;width:100%
+
+    .about_us_description {
+        margin-left: 0;
+        width: 100%
     }
-    .working_container{
-        margin:0;
+
+    .working_container {
+        margin: 0;
     }
+
     .conact {
         font-size: 15px;
     }
+
     /*圖片*/
-    .header_img{
-        position: absolute;top:200px;right: 40px;
-        width: 100%;height: auto;
+    .header_img {
+        top: 150px;
+        left: 50px;
+        width: 300px;
+        height: auto;
     }
-    .working_img{
-        width: 100%;
+
+    .header_english {
+        top: 600px;
+        left: 50px;
+        width: 60%;
+        height: auto;
+    }
+
+    .header_studio {
+        top: 650px;
+        left: 50px;
+        width: 45%;
+        height: auto;
+    }
+
+    .working_img {
+        width: 40%;
     }
 }

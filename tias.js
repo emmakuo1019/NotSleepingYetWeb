@@ -1,6 +1,6 @@
 $(document).ready(function () {
     console.log('home.js 載入成功');
-    
+
     //主頁
     $("#about_us_btn").on("click", function () {
         $("#about_us").get(0).scrollIntoView(
@@ -44,14 +44,14 @@ $(document).ready(function () {
         )
     });
     //角色切換
-    $('.menu_item').on('click', function() {
+    $('.menu_item').on('click', function () {
         const roleIndex = $(this).data('role') - 1; // 0-based
         const slider = $('.role_slider');
         const containerWidth = slider.width();
 
         $('.left-door, .right-door').addClass('closed');
 
-        $('.left-door').one('transitionend', function() {
+        $('.left-door').one('transitionend', function () {
             // 滾動到指定角色位置
             slider.animate({
                 scrollLeft: roleIndex * containerWidth
@@ -75,7 +75,7 @@ $(document).ready(function () {
             clickedCon.slideDown();
         }
     });
-    
+
     //進入視窗效果
     /*const elements = document.querySelectorAll(".title");
 

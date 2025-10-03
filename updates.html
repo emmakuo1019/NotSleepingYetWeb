@@ -1,55 +1,55 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8" />
-  <title>遊戲更新日誌</title>
-  <link rel="stylesheet" href="updates.css">
+    <meta charset="UTF-8"/>
+    <title>遊戲更新日誌</title>
+    <link rel="stylesheet" href="updates.css">
 </head>
 <body>
 <a href="index.html"><h1><--</h1></a>
 <h1>遊戲更新日誌</h1>
 <div style="display: flex;">
-  <div id="log-list"></div>
-  <div id="log-detail"></div>
+    <div id="log-list"></div>
+    <div id="log-detail"></div>
 </div>
 
 <script>
-  fetch("updates.json")
-          .then(res => res.json())
-          .then(logs => {
+    fetch("updates.json")
+        .then(res => res.json())
+        .then(logs => {
             const logList = document.getElementById("log-list");
             const logDetail = document.getElementById("log-detail");
 
             logs.forEach((log, idx) => {
-              const btn = document.createElement("button");
-              btn.textContent = `${log.date}`;
-              btn.onclick = () => {
-                // 移除所有按鈕的 active 樣式
-                logList.querySelectorAll("button").forEach(b => b.classList.remove("active"));
-                btn.classList.add("active");
+                const btn = document.createElement("button");
+                btn.textContent = `${log.date}`;
+                btn.onclick = () => {
+                    // 移除所有按鈕的 active 樣式
+                    logList.querySelectorAll("button").forEach(b => b.classList.remove("active"));
+                    btn.classList.add("active");
 
-                // 產生圖片 HTML（支援單張 image 或多張 images）
-                let imagesHtml = "";
-                if (log.image) {
-                  imagesHtml = `<img src="${log.image}" style="max-width:80%; margin-top:1em; border-radius:8px;" />`;
-                } else if (log.images && Array.isArray(log.images)) {
-                  imagesHtml = log.images.map(src =>
-                          `<img src="${src}" style="max-width:80%; margin-top:1em; border-radius:8px;" />`
-                  ).join("");
-                }
+                    // 產生圖片 HTML（支援單張 image 或多張 images）
+                    let imagesHtml = "";
+                    if (log.image) {
+                        imagesHtml = `<img src="${log.image}" style="max-width:80%; margin-top:1em; border-radius:8px;" />`;
+                    } else if (log.images && Array.isArray(log.images)) {
+                        imagesHtml = log.images.map(src =>
+                            `<img src="${src}" style="max-width:80%; margin-top:1em; border-radius:8px;" />`
+                        ).join("");
+                    }
 
-                // 更新內容顯示區塊
-                logDetail.innerHTML = `
+                    // 更新內容顯示區塊
+                    logDetail.innerHTML = `
             <h2>${log.title}</h2>
             <small>${log.date} (${log.version})</small>
             <p>${log.content.replace(/\n/g, "<br>")}</p>
             ${imagesHtml}
           `;
-              };
-              logList.appendChild(btn);
-              if (idx === 0) btn.click(); // 預設顯示第一筆
+                };
+                logList.appendChild(btn);
+                if (idx === 0) btn.click(); // 預設顯示第一筆
             });
-          });
+        });
 </script>
 
 </body>
